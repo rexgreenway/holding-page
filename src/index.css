@@ -1,18 +1,20 @@
+@font-face {
+  font-family: archiv-grotesk;
+  src: url(assets/archiv-grotesk-semi-bold.otf);
+}
+
 :root {
-  /* DEFINE FONTS HERE */
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* VARS */
+  --text: #ddd;
 
-  /* Work out how colour scheme values work  */
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  /* FONT */
+  font-family: archiv-grotesk, sans-serif;
+  color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* BACKGROUND */
+  background-color: #000;
 }
 
 body {

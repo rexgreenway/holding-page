@@ -1,12 +1,27 @@
-import rexLogo from "/rex-logo.svg";
+import styles from "./App.module.css";
 
-import style from "./App.module.css";
+import Aurora from "./bits/Aurora";
+
+import RexLogo from "./assets/rex-logo.svg?react";
 
 const App = () => {
   return (
-    <div className={style.App}>
-      <img src={rexLogo} className={style.Logo} alt="Rex logo" />
-      <h1>Holding Page</h1>
+    <div>
+      {/* BACKGROUND */}
+      <div className={styles.Background}>
+        <Aurora
+          colorStops={["#eb2e04", "#c47a0c", "#4e0444"]}
+          blend={0.5}
+          amplitude={1.0}
+          speed={0.5}
+        />
+      </div>
+
+      {/* CONTENT */}
+      <div className={styles.App}>
+        <RexLogo className={styles.Logo} />
+        <h1>{window.location.hostname}</h1>
+      </div>
     </div>
   );
 };

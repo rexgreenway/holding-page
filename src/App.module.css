@@ -1,3 +1,11 @@
+.Background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: -1;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -10,4 +18,5 @@
 
 .Logo {
   max-height: 10%;
+  fill: var(--text);
 }
